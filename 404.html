@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+
+        .header-items {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header-nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        .header-nav button {
+            position: relative;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #444;
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            font-size: 20px;
+            color: #444;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+
+        .nav-button-caret {
+            position: absolute;
+            right: -7px;
+            top: -7px;
+        }
+
+        .header-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .header-buttons>button {
+            padding: 5px 10px;
+            border: 2px solid black;
+            background: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .header-buttons>button:nth-child(1) {
+            background: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        main {
+            display: grid;
+            place-items: center;
+            height: 50rem;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 100px;
+        }
+
+        .error-information {
+            width: 520px;
+            font-family: sans-serif;
+        }
+
+        .error-information>h1 {
+            color: #e20491;
+            font-weight: 800;
+            font-size: 70px;
+        }
+
+        .error-information>h2 {
+            font-size: 45px;
+            font-weight: 800;
+            line-height: 50px;
+        }
+
+        .error-information>p {
+            margin-top: 20px;
+            color: #666;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        .link-span {
+            text-decoration: none;
+            color: #006eff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/logo.png" alt="company logo">
+        </div>
+        <div class="header-items">
+            <nav class="header-nav">
+                <button>Platform <span class="nav-button-caret">⌄</span></button>
+                <button>Resources <span class="nav-button-caret">⌄</span></button>
+                <a href="#">Pricing</a>
+            </nav>
+            <div class="header-buttons">
+                <button>Get a demo</button>
+                <button>Get Drift free</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="error-information">
+                <h1>Whoops!</h1>
+                <h2>This page got lost in conversation.</h2>
+                <p>Not to worry. You can head over to our
+                    <a class="link-span" href="#">homepage, read the Drift blog,</a>
+                    or check out some content our customers can't get enough of👇
+                </p>
+            </div>
+            <div class="error-image">
+                <img src="images/404logo.png" alt="404 logo">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
